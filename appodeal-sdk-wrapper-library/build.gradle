@@ -1,17 +1,8 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
-repositories {
-    flatDir {
-        dirs ('libs')
-    }
-}
-
-
 ext {
-
-    artifactVersion = '1.14.15.6'
-
+    artifactVersion = '1.14.15.0'
 }
 
 group='com.github.pamartineza'
@@ -41,7 +32,5 @@ dependencies {
     compile files('libs/inmobi-5.3.1.jar')
     compile files('libs/my-target-4.5.1.jar')
     compile files('libs/yandex-metrica-2.41.jar')
-
-    compile(name:'unity-ads-1.5.6', ext:'aar')
 
 }
