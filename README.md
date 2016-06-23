@@ -7,7 +7,7 @@ x.y.z.version  -> x.y.z match official Appodeal release, "version" should be 0 o
 
 The aim of this repository is to simplify updating Appodeal SDK or switching among available versions, it includes all jar dependencies, manifest entries and proguard configuration.
 
-**Please read carefully:**
+####Please read carefully:
 
 1- Unity-ads dependency **is NOT** included (I haven't been capable of packaging successfully the unity ads .aar whithin an Android Library, let me know if you know how to do it) so you should manually download it from Appodeal website and import the unity-ads-version.aar to your project.
 ```groovy
@@ -24,7 +24,7 @@ compile 'com.android.support:recyclerview-v7:a.b.c'
       android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
       android:theme="@android:style/Theme.Translucent" />	
 ```
-3- AndroidManifest permissions **are NOT** included to allow you to choose what fits bests for your pourposes
+3- AndroidManifest permissions **are NOT** included to allow you to choose what fits best for your pourposes
 
 ```
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
