@@ -16,6 +16,7 @@ compile project(':unity-ads-1.5.6')
 2- Google Play Services **are NOT** included nor support libraries, you must add them in your app dependencies section and don't forget to add the manifest entries for ads:
 ```groovy
 compile 'com.android.support:recyclerview-v7:a.b.c'
+compile 'com.google.android.gms:play-services-ads:r.s.t'
 ```
 ```xml
 <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
@@ -24,9 +25,9 @@ compile 'com.android.support:recyclerview-v7:a.b.c'
       android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
       android:theme="@android:style/Theme.Translucent" />	
 ```
-3- AndroidManifest permissions **are NOT** included to allow you to choose what fits best for your pourposes
+3- AndroidManifest permissions **are NOT** included to allow you to choose what fits best for your pourposes, check Appodeal docs for further refereces
 
-```
+```xml
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
