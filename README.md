@@ -25,7 +25,7 @@ compile 'com.google.android.gms:play-services-ads:r.s.t'
       android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
       android:theme="@android:style/Theme.Translucent" />	
 ```
-3- AndroidManifest permissions **are NOT** included to allow you to choose what fits best for your pourposes, check Appodeal docs for further refereces
+3- AndroidManifest permissions **are NOT** included to allow you to choose what fits best for your pourposes, check Appodeal docs for further references
 
 ```xml
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
