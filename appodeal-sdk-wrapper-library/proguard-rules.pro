@@ -59,11 +59,6 @@
 -dontwarn com.yandex.mobile.ads.**
 -keepattributes *Annotation*
 
-# Inmobi
--keepattributes SourceFile,LineNumberTable,InnerClasses
--keep class com.inmobi.** { *; }
--dontwarn com.inmobi.**
-
 # StartApp
 -keep class com.startapp.** { *;}
 -dontwarn com.startapp.**
@@ -105,6 +100,10 @@
 -dontwarn com.my.target.**
 -keep class ru.mail.android.mytarget.** { *; }
 -dontwarn ru.mail.android.mytarget.**
+
+#Cheetah Mobile
+-dontwarn com.cmcm.adsdk.**
+-keep class com.cmcm.adsdk.** { *;}
 
 # Admob
 -keep class com.google.android.gms.ads.** { *; }
