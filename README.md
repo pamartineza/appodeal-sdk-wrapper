@@ -9,9 +9,10 @@ The aim of this repository is to simplify updating Appodeal SDK or switching amo
 
 ####Please read carefully:
 
-1- Unity-ads dependency **is NOT** included (I haven't been capable of packaging successfully the unity ads .aar whithin an Android Library, let me know if you know how to do it) so you should manually download it from Appodeal website and import the unity-ads-version.aar to your project.
+1- Unity-ads and Cheetah-Mobile dependencies  **are NOT** included (I haven't been capable of packaging successfully the .aar's' whithin an Android Library, let me know if you know how to do it) so you should manually download it from Appodeal website and import the .aar's' to your project.
 ```groovy
-compile project(':unity-ads-1.5.6')
+compile project(':unity-ads-1.5.8')
+compile project(':cheetah-mobile-3.4.7')
 ```
 2- Google Play Services **are NOT** included nor support libraries, you must add them in your app dependencies section and don't forget to add the manifest entries for ads:
 ```groovy
@@ -44,6 +45,7 @@ This project has been built using Jitpack.io
 Releases available using this repo:
 
 * 1.14.15 (June 17, 2016) -> com.github.pamartineza:appodeal-sdk-wrapper:1.14.15.0
+* 1.15.1 (August 8, 2016) -> com.github.pamartineza:appodeal-sdk-wrapper:1.15.1.0
 
 
 Add to your root build.gradle
