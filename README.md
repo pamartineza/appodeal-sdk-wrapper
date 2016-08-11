@@ -44,8 +44,8 @@ This project has been built using Jitpack.io
 
 Releases available using this repo:
 
-* 1.14.15 (June 17, 2016) -> com.github.pamartineza:appodeal-sdk-wrapper:1.14.15.0
 * 1.15.1 (August 8, 2016) -> com.github.pamartineza:appodeal-sdk-wrapper:1.15.1.0
+* 1.14.15 (June 17, 2016) -> com.github.pamartineza:appodeal-sdk-wrapper:1.14.15.0
 
 
 Add to your root build.gradle
