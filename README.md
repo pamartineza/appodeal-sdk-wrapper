@@ -45,12 +45,15 @@ This project has been built using Jitpack.io
 
 Releases available using this repo:
 
-* 1.15.2 (August 12, 2016) -> com.github.pamartineza:appodeal-sdk-wrapper:1.15.2.0     
----------------------------------> aars: unity-ads-1.5.8.aar and cheetah-mobile-3.4.7.aar
-* 1.15.1 (August 8, 2016) -> com.github.pamartineza:appodeal-sdk-wrapper:1.15.1.0
----------------------------------> aars: unity-ads-1.5.8.aar and cheetah-mobile-3.4.7.aar
-* 1.14.15 (June 17, 2016) -> com.github.pamartineza:appodeal-sdk-wrapper:1.14.15.0
----------------------------------> aar: modules: unity-ads-1.5.6.aar
+* 1.15.2 (August 12, 2016) 
+-> com.github.pamartineza:appodeal-sdk-wrapper:1.15.2.0     
+-> aars: unity-ads-1.5.8.aar and cheetah-mobile-3.4.7.aar
+* 1.15.1 (August 8, 2016) 
+-> com.github.pamartineza:appodeal-sdk-wrapper:1.15.1.0
+-> aars: unity-ads-1.5.8.aar and cheetah-mobile-3.4.7.aar
+* 1.14.15 (June 17, 2016)
+-> com.github.pamartineza:appodeal-sdk-wrapper:1.14.15.0
+-> aar: modules: unity-ads-1.5.6.aar
 
 _(aars are available in this repo in the folder aars)_
 
