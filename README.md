@@ -60,7 +60,7 @@ Releases available using this repo:
 -> com.github.pamartineza:appodeal-sdk-wrapper:1.14.15.0
 -> aar: modules: unity-ads-1.5.6.aar
 
-_(aars are available in this repo in the folder aars)_
+_(Note: aars are available in this repo in the folder aars)_
 
 
 
