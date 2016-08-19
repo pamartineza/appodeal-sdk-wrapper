@@ -75,3 +75,5 @@ dependencies {
 }
 ```	
 
+####Please star :star: this project if you find it useful :)
+####Follow me on Twitter to get updates :+1: [@pamartineza](https://twitter.com/pamartineza)
