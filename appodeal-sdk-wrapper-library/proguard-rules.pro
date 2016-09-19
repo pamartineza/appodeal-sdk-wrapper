@@ -102,8 +102,12 @@
 -dontwarn ru.mail.android.mytarget.**
 
 #Cheetah Mobile
--dontwarn com.cmcm.adsdk.**
--keep class com.cmcm.adsdk.** { *;}
+-keep class com.cmcm.** { *; }
+-dontwarn com.cmcm.**
+
+#Tapjoy
+-keep class com.tapjoy.** { *; }
+-dontwarn com.tapjoy.**
 
 # Admob
 -keep class com.google.android.gms.ads.** { *; }
@@ -147,6 +151,9 @@
   public <fields>;
   public <methods>;
 }
+-keep class com.google.android.gms.common.GooglePlayServicesNotAvailableException {*;}
+-keep class com.google.android.gms.common.GooglePlayServicesRepairableException {*;}
+
 # Google Play Services library 9.0.0 only
 -dontwarn android.security.NetworkSecurityPolicy
 -keep public @com.google.android.gms.common.util.DynamiteApi class * { *; }
