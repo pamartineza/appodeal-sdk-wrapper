@@ -40,6 +40,7 @@
 -dontwarn com.applovin.**
 
 # Facebook
+-keep class com.facebook.ads.** { *; }
 -dontwarn com.facebook.ads.**
 
 # Chartboost
@@ -49,8 +50,7 @@
 # Unity Ads
 -keepattributes JavascriptInterface
 -keepattributes SourceFile,LineNumberTable
--keep class com.unity3d.ads.** { *; }
--keep class com.applifier.** { *; }
+-keep class com.unity3d.** { *; }
 
 # Yandex
 -keep class com.yandex.metrica.** { *; }
@@ -84,6 +84,8 @@
 }
 
 # Adcolony
+-keep class com.jirbo.adcolony.** { *;}
+-keep class com.immersion.** { *;}
 -dontnote com.immersion.**
 -dontwarn android.webkit.**
 -dontwarn com.jirbo.adcolony.**
@@ -105,9 +107,13 @@
 -keep class com.cmcm.** { *; }
 -dontwarn com.cmcm.**
 
-#Tapjoy
+# Tapjoy
 -keep class com.tapjoy.** { *; }
 -dontwarn com.tapjoy.**
+
+# Revmob
+-keep class com.revmob.** { *; }
+-dontwarn com.revmob.**
 
 # Admob
 -keep class com.google.android.gms.ads.** { *; }
@@ -167,8 +173,8 @@
 -keep class android.support.v4.util.LruCache { *; }
 -keep class android.support.v4.view.PagerAdapter { *; }
 -keep class android.support.v4.view.ViewPager { *; }
+-keep class android.support.v4.content.ContextCompat { *; }
 
 # support-v7-recyclerview
 -keep class android.support.v7.widget.RecyclerView { *; }
 -keep class android.support.v7.widget.LinearLayoutManager { *; }
-

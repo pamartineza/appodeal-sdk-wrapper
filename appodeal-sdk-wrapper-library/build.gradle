@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
 ext {
-    artifactVersion = '1.15.3.0'
+    artifactVersion = '1.15.5.0'
 }
 
 group='com.github.pamartineza'
@@ -26,10 +26,11 @@ android {
 dependencies {
 
     compile files('libs/applovin-6.3.0.jar')
-    compile files('libs/appodeal-1.15.3.jar')
+    compile files('libs/appodeal-1.15.5.jar')
     compile files('libs/chartboost-6.5.1.jar')
     compile files('libs/flurry-analytics-6.5.0.jar')
     compile files('libs/my-target-4.5.10.jar')
     compile files('libs/yandex-metrica-2.41.jar')
+    compile files('libs/unity-ads-2.0.4.jar')
 
 }
