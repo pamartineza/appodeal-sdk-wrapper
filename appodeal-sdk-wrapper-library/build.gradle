@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
 ext {
-    artifactVersion = '1.15.8.0'
+    artifactVersion = '1.15.9.0'
 }
 
 group='com.github.pamartineza'
@@ -10,8 +10,8 @@ version = artifactVersion
 
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         minSdkVersion 9
@@ -26,11 +26,12 @@ android {
 dependencies {
 
     compile files('libs/applovin-6.3.0.jar')
-    compile files('libs/appodeal-1.15.8.jar')
-    compile files('libs/chartboost-6.5.1.jar')
+    compile files('libs/appodeal-1.15.9.jar')
+    compile files('libs/chartboost-6.6.1.jar')
     compile files('libs/flurry-analytics-6.5.0.jar')
     compile files('libs/my-target-4.5.10.jar')
-    compile files('libs/yandex-metrica-2.51.jar')
     compile files('libs/unity-ads-2.0.4.jar')
+    compile files('libs/yandex-metrica-2.62.jar')
+
 
 }
