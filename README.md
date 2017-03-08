@@ -43,7 +43,8 @@ This project has been built using Jitpack.io
 [![](https://jitpack.io/v/pamartineza/appodeal-sdk-wrapper.svg)](https://jitpack.io/#pamartineza/appodeal-sdk-wrapper)
 
 Releases available using this repo:
-
+* 1.15.9 (February 16, 2017)
+-> com.github.pamartineza:appodeal-sdk-wrapper:1.15.9.0 (aars: cheetah-mobile-3.4.7.aar)
 * 1.15.8 (December 15, 2016)
 -> com.github.pamartineza:appodeal-sdk-wrapper:1.15.8.0 (aars: cheetah-mobile-3.4.7.aar)
 * 1.15.7 (October 10, 2016)
