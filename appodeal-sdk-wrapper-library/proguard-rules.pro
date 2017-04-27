@@ -29,6 +29,7 @@
 # Mopub
 -keep public class com.mopub.**
 -keepclassmembers class com.mopub.** { public *; }
+-dontwarn com.mopub.**
 -keep class * extends com.mopub.mobileads.CustomEventBanner {}
 -keep class * extends com.mopub.mobileads.CustomEventInterstitial {}
 -keep class * extends com.mopub.nativeads.CustomEventNative {}
@@ -48,9 +49,9 @@
 -dontwarn com.chartboost.**
 
 # Unity Ads
--keepattributes JavascriptInterface
 -keepattributes SourceFile,LineNumberTable
 -keep class com.unity3d.** { *; }
+-dontwarn com.unity3d.**
 
 # Yandex
 -keep class com.yandex.metrica.** { *; }
@@ -85,13 +86,15 @@
 
 # Adcolony
 -keep class com.jirbo.adcolony.** { *;}
+-keep class com.adcolony.** { *;}
 -keep class com.immersion.** { *;}
 -dontnote com.immersion.**
 -dontwarn android.webkit.**
 -dontwarn com.jirbo.adcolony.**
+-dontwarn com.adcolony.**
 
 # Vungle
--keep class com.vungle.** { public *; }
+-keep class com.vungle.** { *;}
 -keep class javax.inject.*
 -keepattributes *Annotation*, Signature
 -keep class dagger.*
@@ -100,10 +103,11 @@
 # MyTarget
 -keep class com.my.target.** { *; }
 -dontwarn com.my.target.**
--keep class ru.mail.android.mytarget.** { *; }
--dontwarn ru.mail.android.mytarget.**
 
-#Cheetah Mobile
+# Admob
+-keep class com.google.android.gms.ads.** { *; }
+
+# Cheetah Mobile
 -keep class com.cmcm.** { *; }
 -dontwarn com.cmcm.**
 
@@ -115,8 +119,28 @@
 -keep class com.revmob.** { *; }
 -dontwarn com.revmob.**
 
-# Admob
--keep class com.google.android.gms.ads.** { *; }
+# IronSource
+-keepclassmembers class com.supersonicads.sdk.controller.SupersonicWebView$JSInterface { public *; }
+-keepclassmembers class * implements android.os.Parcelable { public static final android.os.Parcelable$Creator *; }
+-keep class com.supersonic.** { *; }
+-keep class com.supersonicads.** { *; }
+-dontwarn com.supersonic.**
+-dontwarn com.supersonicads.**
+
+#AdColonyV3
+-keepclassmembers class * { @android.webkit.JavascriptInterface <methods>; }
+-dontwarn com.adcolony.**
+-dontwarn android.app.Activity
+
+# Inmobi
+-keep class com.inmobi.** { *; }
+-dontwarn com.inmobi.**
+-dontwarn com.squareup.picasso.**
+-keep class com.squareup.picasso.** {*;}
+-dontwarn com.squareup.picasso.**
+-dontwarn com.squareup.okhttp.**
+-keep class com.moat.** {*;}
+-dontwarn com.moat.**
 
 # Google
 -keep class com.google.android.gms.common.GooglePlayServicesUtil {*;}
