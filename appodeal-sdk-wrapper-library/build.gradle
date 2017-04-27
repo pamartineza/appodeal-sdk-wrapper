@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
 ext {
-    artifactVersion = '1.15.9.0'
+    artifactVersion = '2.0.0-beta.0'
 }
 
 group='com.github.pamartineza'
@@ -25,13 +25,8 @@ android {
 
 dependencies {
 
-    compile files('libs/applovin-6.3.2.jar')
-    compile files('libs/appodeal-2.0.0.jar')
-    compile files('libs/chartboost-6.6.1.jar')
-    compile files('libs/inmobi-6.1.1.jar')
-    compile files('libs/mailru.4.5.15.jar')
-    compile files('libs/unity-ads-2.0.5.jar')
-    compile files('libs/yandex-metrica-2.62.jar')
+    //Libs folder
+    compile fileTree(dir: 'libs', include: ['*.jar'])
     //inmobi dependency
     compile 'com.squareup.picasso:picasso:2.5.2'
 
