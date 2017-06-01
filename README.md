@@ -11,9 +11,8 @@ The aim of this repository is to simplify updating Appodeal SDK or switching amo
 
 1- Aar's dependencies **are NOT** included (I haven't been capable of packaging successfully the .aar's' whithin an Android Library, let me know if you know how to do it) so you should manually download it from Appodeal website and import the .aar's' to your project. (Note: aars are also available in this repo in the folder aars)
 ```groovy
-compile project(':adcolony-sdk-3.1.1')
-compile project(':facebook-audience-network-4.19.0')
-compile project(':cheetah-mobile-3.5')
+compile project(':adcolony-sdk-3.1.2')
+compile project(':facebook-audience-network-4.22.0')
 ```
 2- Google Play Services **are NOT** included nor support libraries, you must add them in your app dependencies section and don't forget to add the manifest entries for ads:
 ```groovy
@@ -37,6 +36,7 @@ compile 'com.google.android.gms:play-services-location:r.s.t'
 <!-- Optional -->
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 ```
 
 ##How to add to your project:
@@ -45,6 +45,8 @@ This project has been built using Jitpack.io
 [![](https://jitpack.io/v/pamartineza/appodeal-sdk-wrapper.svg)](https://jitpack.io/#pamartineza/appodeal-sdk-wrapper)
 
 Releases available using this repo:
+* 2.0.2-beta (May 31, 2017)
+-> com.github.pamartineza:appodeal-sdk-wrapper:2.0.2-beta.0 (aars: facebook-audience-network-4.22.0, adcolony-sdk-3.1.2')
 * 2.0.0-beta (April 12, 2017)
 -> com.github.pamartineza:appodeal-sdk-wrapper:2.0.0-beta.0 (aars: cheetah-mobile-3.5.aar, facebook-audience-network-4.19.0, adcolony-sdk-3.1.1')
 * 1.15.9 (February 16, 2017)
