@@ -107,17 +107,9 @@
 # Admob
 -keep class com.google.android.gms.ads.** { *; }
 
-# Cheetah Mobile
--keep class com.cmcm.** { *; }
--dontwarn com.cmcm.**
-
 # Tapjoy
 -keep class com.tapjoy.** { *; }
 -dontwarn com.tapjoy.**
-
-# Revmob
--keep class com.revmob.** { *; }
--dontwarn com.revmob.**
 
 # IronSource
 -keepclassmembers class com.supersonicads.sdk.controller.SupersonicWebView$JSInterface { public *; }
@@ -127,7 +119,7 @@
 -dontwarn com.supersonic.**
 -dontwarn com.supersonicads.**
 
-#AdColonyV3
+# AdColonyV3
 -keepclassmembers class * { @android.webkit.JavascriptInterface <methods>; }
 -dontwarn com.adcolony.**
 -dontwarn android.app.Activity
@@ -142,6 +134,42 @@
 -keep class com.moat.** {*;}
 -dontwarn com.moat.**
 
+# Ogury
+-dontnote io.presage.**
+-dontwarn shared_presage.**
+-dontwarn org.codehaus.**
+-keepattributes Signature
+-keep class shared_presage.** { *; }
+-keep class io.presage.** { *; }
+-keepclassmembers class io.presage.** { *; }
+-keepattributes *Annotation*
+-keepattributes JavascriptInterface
+-keepclassmembers class * {
+  @android.webkit.JavascriptInterface <methods>;
+}
+-dontnote okhttp3.**
+-dontnote okio.**
+-dontwarn okhttp3.**
+-dontwarn okio.**
+
+-dontnote sun.misc.Unsafe
+-dontnote android.net.http.*
+
+-dontnote org.apache.commons.codec.**
+-dontnote org.apache.http.**
+
+-dontwarn org.apache.commons.collections.BeanMap
+-dontwarn java.beans.**
+-dontnote com.google.gson.**
+-keepclassmembers class * implements java.io.Serializable {
+  static final long serialVersionUID;
+  private static final java.io.ObjectStreamField[] serialPersistentFields;
+  private void writeObject(java.io.ObjectOutputStream);
+  private void readObject(java.io.ObjectInputStream);
+  java.lang.Object writeReplace();
+  java.lang.Object readResolve();
+}
+
 # Google
 -keep class com.google.android.gms.common.GooglePlayServicesUtil {*;}
 -keep class com.google.android.gms.ads.identifier.** { *; }
@@ -154,7 +182,7 @@
 
 # Google Play Services library
 -keep class * extends java.util.ListResourceBundle {
-    protected Object[][] getContents();
+  protected Object[][] getContents();
 }
 -keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
   public static final *** NULL;
