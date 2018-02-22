@@ -1,4 +1,9 @@
-# appodeal-sdk-wrapper
+
+# THIS REPO HAS BEEN DEPRECATED  
+Due to the increased fine grained configuration of Appodeal last SDK releases that requires manual edition of AndroidManifest this repo is no longer maitained.
+
+
+## appodeal-sdk-wrapper
 Get Appodeal SDK adding just a Gradle dependency line :)
 
 
